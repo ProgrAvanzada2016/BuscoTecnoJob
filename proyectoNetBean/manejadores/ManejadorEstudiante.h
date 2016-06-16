@@ -5,8 +5,8 @@
  */
 
 /* 
- * File:   ManejadorEstudiantes.h
- * Author: emi
+ * File:   ManejadorEstudiante.h
+ * Author: GrupoProgAvanzada3
  *
  * Created on 1 de junio de 2016, 03:45 PM
  */
@@ -21,15 +21,15 @@
 
 using namespace std;
 
-class ManejadorEstudiantes {
+class ManejadorEstudiante {
 public:
-    static ManejadorEstudiantes* getInstancia();
+    static ManejadorEstudiante* getInstancia();
     
     void insertarEstudiante(Estudiante*);
     list<DtEstudiante*>* listarEstudiantes();
     Estudiante* getEstudiante(string);
 private:
-    static ManejadorEstudiantes* instancia;
+    static ManejadorEstudiante* instancia;
     map<string, Estudiante*> estudiantes;
     
 };

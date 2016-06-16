@@ -6,7 +6,7 @@
 
 /* 
  * File:   DtEstudiante.cpp
- * Author: emi
+ * Author: GrupoProgAvanzada3
  * 
  * Created on 2 de junio de 2016, 05:46 PM
  */

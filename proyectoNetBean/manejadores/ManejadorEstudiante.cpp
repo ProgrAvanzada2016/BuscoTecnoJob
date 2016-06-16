@@ -6,12 +6,12 @@
 
 /* 
  * File:   ManejadorEstudiantes.cpp
- * Author: emi
+ * Author: GrupoProgAvanzada3
  * 
  * Created on 1 de junio de 2016, 03:45 PM
  */
 
-#include "ManejadorEstudiantes.h"
+#include "ManejadorEstudiante.h"
 
 ManejadorEstudiantes* ManejadorEstudiantes::instancia = NULL;  
 

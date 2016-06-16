@@ -6,7 +6,7 @@
 
 /* 
  * File:   Estudiante.cpp
- * Author: emi
+ * Author: GrupoProgAvanzada3
  * 
  * Created on 1 de junio de 2016, 03:42 PM
  */

@@ -6,7 +6,7 @@
 
 /* 
  * File:   fabrica.h
- * Author: emi
+ * Author: GrupoProgAvanzada3
  *
  * Created on 2 de junio de 2016, 05:39 PM
  */
@@ -19,7 +19,7 @@
 class Fabrica {
 public:
     static IcontroladorEstudiante* getIControladorEstudiantes();
-    
+    static IcontroladorOferta* getIControladorOferta();
 private:
 
 };

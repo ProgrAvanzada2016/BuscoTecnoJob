@@ -6,15 +6,18 @@
 
 /* 
  * File:   fabrica.cpp
- * Author: emi
+ * Author: GrupoProgAvanzada3
  * 
  * Created on 2 de junio de 2016, 05:39 PM
  */
 
 #include "fabrica.h"
-#include "../controladores/EstudianteController.h"
+#include "../controladores/ControladorEstudiante.h"
 
 IcontroladorEstudiante* Fabrica::getIControladorEstudiantes() {
-    return new EstudianteController;
+    return new ControladorEstudiante;
 }
 
+IcontroladorOferta* Fabrica::getIControladorOferta() {
+    return new ControladorOferta;
+}

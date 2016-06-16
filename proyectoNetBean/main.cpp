@@ -6,7 +6,7 @@
 
 /* 
  * File:   main.cpp
- * Author: emi
+ * Author: GrupoProgAvanzada3
  *
  * Created on 1 de junio de 2016, 03:21 PM
  */
@@ -14,7 +14,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include "conceptos/Persona.h"
-#include "manejadores/ManejadorEstudiantes.h"
+#include "manejadores/ManejadorEstudiante.h"
 #include "fabricas/fabrica.h"
 
 

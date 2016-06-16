@@ -5,8 +5,8 @@
  */
 
 /* 
- * File:   EstudianteController.h
- * Author: emi
+ * File:   ControladorEstudiante.h
+ * Author: GrupoProgAvanzada3
  *
  * Created on 1 de junio de 2016, 03:24 PM
  */
@@ -17,10 +17,10 @@ using namespace std;
 
 #include "../interfaces/IcontroladorEstudiante.h"
 
-class EstudianteController : public IcontroladorEstudiante {
+class ControladorEstudiante : public IcontroladorEstudiante {
 public:
-    EstudianteController();
-    virtual ~EstudianteController();
+    ControladorEstudiante();
+    virtual ~ControladorEstudiante();
 
 
     virtual void insertarEstudiante(DtEstudiante);

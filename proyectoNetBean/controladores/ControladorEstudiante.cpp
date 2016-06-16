@@ -5,29 +5,29 @@
  */
 
 /* 
- * File:   EstudianteController.cpp
- * Author: emi
+ * File:   ControladorEstudiante.cpp
+ * Author: GrupoProgAvanzada3
  * 
  * Created on 1 de junio de 2016, 03:24 PM
  */
 
-#include "EstudianteController.h"
+#include "ControladorEstudiante.h"
 #include "../manejadores/ManejadorEstudiantes.h"
 using namespace std;
 
 
-EstudianteController::EstudianteController() {
+ControladorEstudiante::ControladorEstudiante() {
 }
 
-EstudianteController::~EstudianteController() {
+ControladorEstudiante::~ControladorEstudiante() {
 
 }
 
-Estudiante* EstudianteController::getEstudiante(string ci) {
+Estudiante* ControladorEstudiante::getEstudiante(string ci) {
     return ManejadorEstudiantes::getInstancia()->getEstudiante(ci);
 }
 
-void EstudianteController::insertarEstudiante(DtEstudiante dte) {
+void ControladorEstudiante::insertarEstudiante(DtEstudiante dte) {
     Estudiante* e = new Estudiante();
     e->Setci(dte.GetCi());
     e->Setnombre(dte.GetNombre());
@@ -36,12 +36,12 @@ void EstudianteController::insertarEstudiante(DtEstudiante dte) {
     ManejadorEstudiantes::getInstancia()->insertarEstudiante(e);
 }
 
-list<DtEstudiante*>* EstudianteController::listarEstudiantes() {
+list<DtEstudiante*>* ControladorEstudiante::listarEstudiantes() {
     return ManejadorEstudiantes::getInstancia()->listarEstudiantes();
 }
 
 
-DtEstudiante* EstudianteController::getDataEstudiante(string ci){
+DtEstudiante* ControladorEstudiante::getDataEstudiante(string ci){
     return ManejadorEstudiantes::getInstancia()->getEstudiante(ci)->getDataType();
 }
 
