@@ -10,7 +10,21 @@
       <itemPath>interfaces/IcontroladorEstudiante.h</itemPath>
       <itemPath>manejadores/ManejadorEstudiantes.h</itemPath>
       <itemPath>conceptos/Persona.h</itemPath>
+      <itemPath>conceptos/PersonaEmiliano.h</itemPath>
+      <itemPath>conceptos/aceptaCargo.h</itemPath>
+      <itemPath>conceptos/aprobacion.h</itemPath>
+      <itemPath>conceptos/asignatura.h</itemPath>
+      <itemPath>conceptos/carrera.h</itemPath>
+      <itemPath>conceptos/date.h</itemPath>
+      <itemPath>conceptos/empresa.h</itemPath>
+      <itemPath>conceptos/encargado.h</itemPath>
+      <itemPath>conceptos/estudiante.h</itemPath>
       <itemPath>fabricas/fabrica.h</itemPath>
+      <itemPath>conceptos/inscripcion.h</itemPath>
+      <itemPath>conceptos/oferta.h</itemPath>
+      <itemPath>conceptos/persona.h</itemPath>
+      <itemPath>conceptos/seccion.h</itemPath>
+      <itemPath>conceptos/sucursal.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -22,10 +36,25 @@
       <itemPath>datatypes/DtEstudiante.cpp</itemPath>
       <itemPath>conceptos/Estudiante.cpp</itemPath>
       <itemPath>controladores/EstudianteController.cpp</itemPath>
+      <itemPath>conceptos/EstudianteEmiliano.cpp</itemPath>
       <itemPath>manejadores/ManejadorEstudiantes.cpp</itemPath>
       <itemPath>conceptos/Persona.cpp</itemPath>
+      <itemPath>conceptos/PersonaEmiliano.cpp</itemPath>
+      <itemPath>conceptos/aceptaCargo.cpp</itemPath>
+      <itemPath>conceptos/aprobacion.cpp</itemPath>
+      <itemPath>conceptos/asignatura.cpp</itemPath>
+      <itemPath>conceptos/carrera.cpp</itemPath>
+      <itemPath>conceptos/date.cpp</itemPath>
+      <itemPath>conceptos/empresa.cpp</itemPath>
+      <itemPath>conceptos/encargado.cpp</itemPath>
+      <itemPath>conceptos/estudiante.cpp</itemPath>
       <itemPath>fabricas/fabrica.cpp</itemPath>
+      <itemPath>conceptos/inscripcion.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>conceptos/oferta.cpp</itemPath>
+      <itemPath>conceptos/persona.cpp</itemPath>
+      <itemPath>conceptos/seccion.cpp</itemPath>
+      <itemPath>conceptos/sucursal.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -56,9 +85,67 @@
       </item>
       <item path="conceptos/Estudiante.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="conceptos/EstudianteEmiliano.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="conceptos/Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="conceptos/Persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/PersonaEmiliano.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/PersonaEmiliano.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/date.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/date.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/estudiante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/estudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/persona.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="controladores/EstudianteController.cpp"
             ex="false"
@@ -117,9 +204,67 @@
       </item>
       <item path="conceptos/Estudiante.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="conceptos/EstudianteEmiliano.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="conceptos/Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="conceptos/Persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/PersonaEmiliano.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/PersonaEmiliano.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/date.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/date.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/estudiante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/estudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/persona.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="controladores/EstudianteController.cpp"
             ex="false"

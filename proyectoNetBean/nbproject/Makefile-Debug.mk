@@ -36,7 +36,22 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/conceptos/Estudiante.o \
+	${OBJECTDIR}/conceptos/EstudianteEmiliano.o \
 	${OBJECTDIR}/conceptos/Persona.o \
+	${OBJECTDIR}/conceptos/PersonaEmiliano.o \
+	${OBJECTDIR}/conceptos/aceptaCargo.o \
+	${OBJECTDIR}/conceptos/aprobacion.o \
+	${OBJECTDIR}/conceptos/asignatura.o \
+	${OBJECTDIR}/conceptos/carrera.o \
+	${OBJECTDIR}/conceptos/date.o \
+	${OBJECTDIR}/conceptos/empresa.o \
+	${OBJECTDIR}/conceptos/encargado.o \
+	${OBJECTDIR}/conceptos/estudiante.o \
+	${OBJECTDIR}/conceptos/inscripcion.o \
+	${OBJECTDIR}/conceptos/oferta.o \
+	${OBJECTDIR}/conceptos/persona.o \
+	${OBJECTDIR}/conceptos/seccion.o \
+	${OBJECTDIR}/conceptos/sucursal.o \
 	${OBJECTDIR}/controladores/EstudianteController.o \
 	${OBJECTDIR}/datatypes/DtEstudiante.o \
 	${OBJECTDIR}/fabricas/fabrica.o \
@@ -73,10 +88,85 @@ ${OBJECTDIR}/conceptos/Estudiante.o: conceptos/Estudiante.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/Estudiante.o conceptos/Estudiante.cpp
 
+${OBJECTDIR}/conceptos/EstudianteEmiliano.o: conceptos/EstudianteEmiliano.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/EstudianteEmiliano.o conceptos/EstudianteEmiliano.cpp
+
 ${OBJECTDIR}/conceptos/Persona.o: conceptos/Persona.cpp 
 	${MKDIR} -p ${OBJECTDIR}/conceptos
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/Persona.o conceptos/Persona.cpp
+
+${OBJECTDIR}/conceptos/PersonaEmiliano.o: conceptos/PersonaEmiliano.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/PersonaEmiliano.o conceptos/PersonaEmiliano.cpp
+
+${OBJECTDIR}/conceptos/aceptaCargo.o: conceptos/aceptaCargo.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/aceptaCargo.o conceptos/aceptaCargo.cpp
+
+${OBJECTDIR}/conceptos/aprobacion.o: conceptos/aprobacion.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/aprobacion.o conceptos/aprobacion.cpp
+
+${OBJECTDIR}/conceptos/asignatura.o: conceptos/asignatura.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/asignatura.o conceptos/asignatura.cpp
+
+${OBJECTDIR}/conceptos/carrera.o: conceptos/carrera.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/carrera.o conceptos/carrera.cpp
+
+${OBJECTDIR}/conceptos/date.o: conceptos/date.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/date.o conceptos/date.cpp
+
+${OBJECTDIR}/conceptos/empresa.o: conceptos/empresa.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/empresa.o conceptos/empresa.cpp
+
+${OBJECTDIR}/conceptos/encargado.o: conceptos/encargado.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/encargado.o conceptos/encargado.cpp
+
+${OBJECTDIR}/conceptos/estudiante.o: conceptos/estudiante.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/estudiante.o conceptos/estudiante.cpp
+
+${OBJECTDIR}/conceptos/inscripcion.o: conceptos/inscripcion.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/inscripcion.o conceptos/inscripcion.cpp
+
+${OBJECTDIR}/conceptos/oferta.o: conceptos/oferta.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/oferta.o conceptos/oferta.cpp
+
+${OBJECTDIR}/conceptos/persona.o: conceptos/persona.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/persona.o conceptos/persona.cpp
+
+${OBJECTDIR}/conceptos/seccion.o: conceptos/seccion.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/seccion.o conceptos/seccion.cpp
+
+${OBJECTDIR}/conceptos/sucursal.o: conceptos/sucursal.cpp 
+	${MKDIR} -p ${OBJECTDIR}/conceptos
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conceptos/sucursal.o conceptos/sucursal.cpp
 
 ${OBJECTDIR}/controladores/EstudianteController.o: controladores/EstudianteController.cpp 
 	${MKDIR} -p ${OBJECTDIR}/controladores
