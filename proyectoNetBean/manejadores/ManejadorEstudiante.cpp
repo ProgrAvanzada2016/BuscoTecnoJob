@@ -11,22 +11,27 @@
  * Created on 1 de junio de 2016, 03:45 PM
  */
 
+#include <iostream>
+#include <stdio.h>
+#include <string>
+
+using namespace std;
 #include "ManejadorEstudiante.h"
 
-ManejadorEstudiantes* ManejadorEstudiantes::instancia = NULL;  
+ManejadorEstudiante* ManejadorEstudiante::instancia = NULL;  
 
-ManejadorEstudiantes* ManejadorEstudiantes::getInstancia() {
+ManejadorEstudiante* ManejadorEstudiante::getInstancia() {
     if (!instancia){
-        instancia = new ManejadorEstudiantes;   
+        instancia = new ManejadorEstudiante;   
     }
     return instancia;
 }
 
-Estudiante* ManejadorEstudiantes::getEstudiante(string ci) {
+Estudiante* ManejadorEstudiante::getEstudiante(string ci) {
     return estudiantes.find(ci)->second;
 }
 
-void ManejadorEstudiantes::insertarEstudiante(Estudiante* e) {
+/*void ManejadorEstudiantes::insertarEstudiante(Estudiante* e) {
       estudiantes.insert ( std::pair<string,Estudiante*>(e->Getci(),e) );
 }
 

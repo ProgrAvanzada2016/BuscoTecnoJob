@@ -11,9 +11,10 @@
  * Created on 1 de junio de 2016, 03:42 PM
  */
 
-#include "Estudiante.h"
+//#include "../conceptos/estudiante.h"
+#include "../datatypes/DtEstudiante.h"
 
-Estudiante::Estudiante(string ci, string nombre, string apellido) {
+estudiante::estudiante(string ci, string nombre, string apellido) {
     this->Setapellido(apellido);
     this->Setci(ci);
     this->Setnombre(nombre);
@@ -22,9 +23,9 @@ Estudiante::Estudiante(string ci, string nombre, string apellido) {
 
 
 
-Estudiante::~Estudiante() {
+estudiante::~estudiante() {
 }
 
-DtEstudiante* Estudiante::getDataType() {
+DtEstudiante* estudiante::getDataType() {
     return new DtEstudiante(this->Getci(), this->Getnombre(), this->Getapellido());
 }

@@ -17,8 +17,8 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
-#include "dtDate.h"
-#include "dtRango.h"
+#include "../datatypes/dtDate.h"
+#include "../datatypes/dtRango.h"
 using namespace std;
 
 

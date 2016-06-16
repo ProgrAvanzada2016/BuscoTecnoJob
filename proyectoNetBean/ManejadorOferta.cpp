@@ -11,7 +11,8 @@
  * Created on 16 de junio de 2016, 19:55
  */
 
-#include "ManejadorOferta.h"
+#include "../proyectoNetBean/ManejadorOferta.h"
+#include "../proyectoNetBean/conceptos/oferta.h"
 
 ManejadorOferta* ManejadorOferta::instancia = NULL;  
 
@@ -22,6 +23,6 @@ ManejadorOferta* ManejadorOferta::getInstancia() {
     return instancia;
 }
 
-oferta* ManejadorOferta::getEstudiante(string ci) {
-    return oferta.find(ci)->second;
-}
+//oferta* ManejadorOferta::getOferta(string ci) {
+  //  return oferta.find(ci)->second;
+//}

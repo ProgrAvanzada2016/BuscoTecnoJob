@@ -18,7 +18,7 @@
 #include <map>
 #include <list>
 #include <string>
-#include "../conceptos/oferta.h"
+#include "../proyectoNetBean/conceptos/oferta.h"
 
 using namespace std;
 
