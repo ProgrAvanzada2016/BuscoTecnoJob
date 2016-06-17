@@ -19,6 +19,26 @@ dtRango::dtRango() {
 dtRango::dtRango(const dtRango& orig) {
 }
 
+dtRango(int minimo,int maximo){
+this->minimo=minimo;
+this->maximo=maximo;
+}
+
+
+int dtRango::getMinimo(){
+this->minimo;
+}
+
+int dtRango::getMaximo(){
+this->maximo;
+}
+
 dtRango::~dtRango() {
 }
 
+
+    
+    //getters
+    int getMinimo();
+    int getMaximo();
+    virtual ~dtRango();

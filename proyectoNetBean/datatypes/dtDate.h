@@ -28,7 +28,7 @@ class dtDate {
     public:
             dtDate(); //constructor por defecto
             dtDate(const dtDate& orig); //constructor por copia
-            dtDate(int d,int m,int a); //constructor por parÃ¡metro
+            dtDate(int d,int m,int a); //constructor por parametro
             //getters
             int getDay();    
             int getMonth();

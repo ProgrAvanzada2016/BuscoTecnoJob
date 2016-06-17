@@ -25,9 +25,11 @@ class dtAcepto {
         float sueldo;
         dtDate fechaAcepto; 
 public:
-    dtAcepto();
-    dtAcepto(const dtAcepto& orig);
-    dtAcepto(float sueldo,dtDate fechaAcepto);
+    dtAcepto(); //constructor por defecto
+    dtAcepto(const dtAcepto& orig);//constructor por copia
+    dtAcepto(float sueldo,dtDate fechaAcepto);//constructor por parametro
+    float getSueldo()const;
+    dtDate getFechaAcepto()const;
     virtual ~dtAcepto();
 
 };

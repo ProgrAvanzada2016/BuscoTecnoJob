@@ -12,6 +12,7 @@
  */
 
 #include "dtAcepto.h"
+#include "dtDate.h"
 
 dtAcepto::dtAcepto() {
 }
@@ -20,8 +21,25 @@ dtAcepto::dtAcepto(const dtAcepto& orig) {
 }
 
 dtAcepto::dtAcepto(float sueldo, dtDate fechaAcepto){
+    this->fechaAcepto=fechaAcepto;
+    this->sueldo=sueldo;
+}
+
+  
+float dtAcepto::getSueldo()const{
+return sueldo;
+}
+
+
+dtDate getFechaAcepto()const{
+return fechaAcepto;
 }
 
 dtAcepto::~dtAcepto() {
 }
 
+
+    
+   
+    float getSueldo()const;
+    dtDate getFechaAcepto()const;
