@@ -11,7 +11,7 @@
  * Created on 1 de junio de 2016, 03:42 PM
  */
 
-//#include "../conceptos/estudiante.h"
+#include "../conceptos/estudiante.h"
 #include "../datatypes/DtEstudiante.h"
 
 estudiante::estudiante(string ci, string nombre, string apellido) {
