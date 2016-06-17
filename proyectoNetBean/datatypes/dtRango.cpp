@@ -37,8 +37,4 @@ dtRango::~dtRango() {
 }
 
 
-    
-    //getters
-    int getMinimo();
-    int getMaximo();
-    virtual ~dtRango();
+   
