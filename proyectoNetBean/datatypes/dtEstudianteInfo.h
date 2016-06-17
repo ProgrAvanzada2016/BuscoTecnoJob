@@ -25,7 +25,7 @@ public:
     virtual ~dtEstudianteInfo();
     
     dtEstudianteInfo(string ci, string nombre, string apellido) :
-    ci(ci), nombre(nombre), apellido(apellido) {
+        ci(ci), nombre(nombre), apellido(apellido) {
     }
 
     string GetApellido() const;
@@ -41,7 +41,7 @@ private:
     string telefono;
     int creditos;
     list<dtAsignatura*> listaAsignaturasAprob;
-    list<dtLlamado*> listaLLamadosIns;
+    list<dtOferta*> listaOferta;
 };
 
 

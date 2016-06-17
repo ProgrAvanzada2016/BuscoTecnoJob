@@ -13,14 +13,25 @@
 
 #ifndef DTASIGNATURA_H
 #define DTASIGNATURA_H
+#include <string>
+
+using namespace std;
 
 class dtAsignatura {
 public:
     dtAsignatura();
     dtAsignatura(const dtAsignatura& orig);
+    dtAsignatura(string codigo, string nombre, int creditos);
+    
+    string GetCodigo();
+    string GetNombre();
+    int GetCreditos();
+    
     virtual ~dtAsignatura();
 private:
-
+    string codigo;
+    string nombre;
+    int creditos;
 };
 
 #endif /* DTASIGNATURA_H */
