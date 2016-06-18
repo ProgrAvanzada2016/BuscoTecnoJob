@@ -73,8 +73,7 @@ class oferta {
                    void InscribeEstudianteOferta(Estudiante e);
                    
                    void AltaEntrevista(string ci,date fecha);
-                   
-
+}
 
 #endif /* OFERTA_H */
 
