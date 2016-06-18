@@ -57,11 +57,21 @@ oferta* ControladorOferta::getOferta(double nroExp) {
 
 
  //FUNCIONES PARA ALTA DE ENTREVISTA(ale)
-    listaOfertasActivas (): Set (DtOferta){
+    list<dtOferta*>* ControladorOferta::listaOfertasActivas (){
+    list<dtOferta*>* lista= ManejadorOferta->getListaOfertasActivas();
+    return lista;  
     }
     
-    obtenerListaEstOf(Nro_exp:string):Set(DtEstudiante){
+    
+   list<(dtEstudiante*)>* ControladorOferta::obtenerListaEstOf(string nroExp){
+      oferta o = getOferta(nroExp);
+      list<dtEstudiante*>* lista= o->get;
+    return lista;    
+   }
+   
+   
+   void ControladorOferta::altaEntrevista(ci,fecha){
     }
     
-    altaEntrevista(ci,fecha){
-    }
+    
+    

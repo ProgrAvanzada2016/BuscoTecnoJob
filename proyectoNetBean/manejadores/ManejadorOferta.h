@@ -19,12 +19,16 @@
 #include <list>
 #include <string>
 #include "../proyectoNetBean/conceptos/oferta.h"
+#include"../datatypes/dtOferta.h"
 
 using namespace std;
 
 class ManejadorOferta {
 public:
     static ManejadorOferta* getInstancia();
+    
+    //OPERACIONES PARA ALTA ENTREVISTA
+ (DtOferta*)* getListaOfertasActivas();
     
 private:
     static ManejadorOferta* instancia;

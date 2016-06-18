@@ -24,6 +24,13 @@ ManejadorOferta* ManejadorOferta::getInstancia() {
     return instancia;
 }
 
-oferta* ManejadorOferta::getOferta(string ci) {
-   return oferta.find(ci)->second;
+oferta* ManejadorOferta::getOferta(double nroExp) {
+   return oferta.find(nroExp)->second;
 }
+
+
+    //OPERACIONES PARA ALTA ENTREVISTA
+ (DtOferta*)* getListaOfertasActivas(){
+    // for echa next
+          //  bool a= ofertaActiva();
+ };    

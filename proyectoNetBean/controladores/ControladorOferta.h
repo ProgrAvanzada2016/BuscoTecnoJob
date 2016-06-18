@@ -31,14 +31,12 @@ public:
     
        
     //FUNCIONES PARA ALTA DE ENTREVISTA(ale)
-    listaOfertasActivas (): Set (DtOferta){
-    }
+    list<dtOferta*>* listaOfertasActivas ();
     
-    obtenerListaEstOf(Nro_exp:string):Set(DtEstudiante){
-    }
+    list<(dtEstudiante*)>* obtenerListaEstOf(string nroExp);
     
-    altaEntrevista(ci,fecha){
-    }
+    void altaEntrevista(ci,fecha);
+    
     
 private:
       
