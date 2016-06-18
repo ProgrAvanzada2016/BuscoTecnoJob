@@ -28,7 +28,7 @@ oferta::oferta(const oferta& orig) {
     
 }
 
-oferta::oferta(string nroExp, string titulo, string descripcion,dtRango rangoSalarial,int horas,dtDate fechaInicio,dtDate fechaFin,int cantPuestos){
+oferta::oferta(string nroExp, string titulo, string descripcion,dtRango rangoSalarial,int horas,date fechaInicio,date fechaFin,int cantPuestos){
     
     this->nroExp = nroExp;
     this->titulo = titulo;
@@ -103,7 +103,7 @@ void oferta::SetHoras(int val){
 
 }
 
-dtDate oferta::GetFechaInicio(){
+date oferta::GetFechaInicio(){
 
     return this->fechaInicio;
 }
@@ -112,7 +112,7 @@ void oferta::SetFechaInicio(int val){
     this->fechaInicio = val;
 }
 
-dtDate oferta::GetFechaFin(){
+date oferta::GetFechaFin(){
     
     return this->fechaFin;
 
@@ -141,7 +141,7 @@ bool oferta::ofertaActiva(){
 
 }
 
-list <DtEstudiante> GetListaEstOf(){
+list <DtEstudiante> oferta::GetListaEstOf(){
 
 
 }
@@ -151,7 +151,7 @@ DtOferta oferta::crearDtOferta(){
 
 }
 
-void oferta::Modificar(string titulo, string descripcion, dtRango rangoSalarial, int horas, dtDate fechaInicio, dtDate fechaFin, int cantPuestos){
+void oferta::Modificar(string titulo, string descripcion, dtRango rangoSalarial, int horas, date fechaInicio, date fechaFin, int cantPuestos){
 
     SetTitulo(titulo);
     SetDescripcion(descripcion);
