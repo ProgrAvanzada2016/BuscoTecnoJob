@@ -40,7 +40,7 @@ class oferta {
                    //Constructores
                    oferta();
                    oferta(const oferta& orig);
-                   oferta(string nroExp, string titulo, string descripcion,dtRango rangoSalarial,int horas,dtDate fechaInicio,dtDate fechaFin,int cantPuestos);
+                   oferta(string nroExp, string titulo, string descripcion,dtRango rangoSalarial,int horas,date fechaInicio,date fechaFin,int cantPuestos);
                    virtual ~oferta();
                    
                    //Geters y Seters
@@ -51,12 +51,12 @@ class oferta {
                    string GetDescripcion();
                    void SetDescripcion(string val);
                    dtRango GetRangoSalarial();
-                   dtRango SetRangoSalarial(DtRango val);
+                   SetRangoSalarial(DtRango val);
                    int GetHoras();
                    void SetHoras(int val);
-                   dtDate GetFechaInicio();
+                   date GetFechaInicio();
                    void SetFechaInicio(int val);
-                   dtDate GetFechaFin();
+                   date GetFechaFin();
                    void SetFechaFin(int val);
                    int GetCantPuestos();
                    void SetCantPuestos(int val);
@@ -68,7 +68,7 @@ class oferta {
                    
                    dtOferta crearDtOferta();
                    
-                   void Modificar(string titulo, string descripcion,dtRango rangoSalarial,int horas,dtDate fechaInicio,dtDate fechaFin,int cantPuestos);//Agregada por Gastón
+                   void Modificar(string titulo, string descripcion,dtRango rangoSalarial,int horas,date fechaInicio,date fechaFin,int cantPuestos);
                    
                    void InscribeEstudianteOferta(Estudiante e);
                    
