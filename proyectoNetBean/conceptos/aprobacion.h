@@ -18,16 +18,25 @@
 #include <stdio.h>
 #include <string>
 #include "dtAcepto.h"
+#include "date.h"
 using namespace std;
 
 class aprobacion {
     private: 
-        dtDate fechaApro;
+        date fechaApro;
         int nota;
 public:
     aprobacion();
     aprobacion(const aprobacion& orig);
-    aprobacion(dtDate fechaApro, int nota);
+    aprobacion(date fechaApro, int nota);
+    //getters
+    date getFechaApro();
+    int getNota();
+    
+    //setters
+    void setFechaApro();
+    void setNota();
+    
     virtual ~aprobacion();
 private:
 

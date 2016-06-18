@@ -27,6 +27,13 @@ public:
     carrera();
     carrera(const carrera& orig);
     carrera(string codigo,string nombre);
+    //getters
+    string getCodigo();
+    string getNombre();
+    //setters
+    void setCodigo();
+    void setNombre();
+    
     virtual ~carrera();
 
 };

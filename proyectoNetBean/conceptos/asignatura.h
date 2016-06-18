@@ -29,6 +29,15 @@ public:
     asignatura();
     asignatura(const asignatura& orig);
     asignatura(string codigo, string nombre, int creditos);
+    //getters
+    string getCodigo();
+    string getNombre();
+    int getCreditos();
+    //setters
+    void setCodigo(string codigo);
+    void setNombre(string nombre);
+    void setCreditos(int creditos);
+    
     virtual ~asignatura();
 private:
 

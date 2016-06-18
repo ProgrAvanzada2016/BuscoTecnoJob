@@ -17,9 +17,30 @@ aprobacion::aprobacion() {
 }
 
 aprobacion::aprobacion(const aprobacion& orig) {
+    this->fechaApro=orig.fechaApro;
+    this->nota=orig.nota;
 }
 
-aprobacion::aprobacion(dtDate fechaApro, int nota){
+aprobacion::aprobacion(date fechaApro, int nota){
+    this->fechaApro=fechaApro;
+    this->nota=nota;
+}
+    //getters
+date aprobacion::getFechaApro(){
+ return this->fechaApro;
+}
+    
+int aprobacion::getNota(){
+    this->nota;
+}
+    
+    //setters
+void aprobacion::setFechaApro(date fechaApro){
+    this->fechaApro=fechaApro;
+    }
+
+void aprobacion::setNota(int nota){
+this->nota=nota;
 }
 
 aprobacion::~aprobacion() {

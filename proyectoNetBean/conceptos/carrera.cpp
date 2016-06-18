@@ -17,6 +17,28 @@ carrera::carrera() {
 }
 
 carrera::carrera(const carrera& orig) {
+    this->codigo=orig.codigo;
+    this->nombre=orig.nombre;
+}
+
+ carrera::carrera(string codigo,string nombre){
+    this->codigo=codigo;
+    this->nombre=nombre;
+ }
+    //getters
+ string carrera::getCodigo(){
+     return this->codigo;
+    }
+ string carrera::getNombre(){
+    return this->nombre;
+ }
+    //setters
+void carrera::setCodigo(string codigo){
+    this->codigo=codigo;
+}
+
+void carrera::setNombre(nombre){
+    this->nombre=nombre;
 }
 
 carrera::~carrera() {
