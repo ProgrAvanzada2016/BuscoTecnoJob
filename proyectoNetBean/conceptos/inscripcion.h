@@ -16,11 +16,16 @@
 
 class inscripcion {
 private:
-    dtDate fecha;
-    dtDate ** entrevistas;//PREGUNTAR SI ESTO ESTA BIEN!!
+    date fecha;
+    date **entrevistas;
 public:
     inscripcion();
     inscripcion(const inscripcion& orig);
+    inscripcion(date fecha, date **entrevistas);
+    date getFecha();
+    date **getEntrevistas();
+    void setFecha(date fecha);
+    void setEntrevistas(date **entrevistas);
     virtual ~inscripcion();
 private:
 

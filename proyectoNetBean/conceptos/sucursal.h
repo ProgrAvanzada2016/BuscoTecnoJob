@@ -28,6 +28,16 @@ public:
     sucursal();
     sucursal(const sucursal& orig);
     sucursal(string nombre,string telefono, string direccion);
+    
+    //geters
+    string getNombre();
+    string getTelefono();
+    string getDireccion();
+    //setters
+    void setNombre(string nombre);
+    void setTelefono(string telefono);
+    void setDireccion(string direccion);
+    
     virtual ~sucursal();
 
 };

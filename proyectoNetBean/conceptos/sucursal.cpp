@@ -17,10 +17,44 @@ sucursal::sucursal() {
 }
 
 sucursal::sucursal(const sucursal& orig) {
+    this->nombre=orig.nombre;
+    this->telefono=orig.telefono;
+    this->direccion=orig.direccion;
 }
 
 sucursal::sucursal(string nombre,string telefono, string direccion){
-};
+    this->nombre=nombre;
+    this->telefono=telefono;
+    this->direccion=direccion;   
+}
+
+   
+    //geters
+string sucursal::getNombre(){
+    return this->nombre;
+}
+
+string sucursal::getTelefono(){
+    return this->telefono;
+}
+
+string sucursal::getDireccion(){
+    return this->direccion;
+}
+
+    //setters
+void sucursal::setNombre(string nombre){
+    this->nombre=nombre;
+    }
+
+void sucursal::setTelefono(string telefono){
+    this->telefono=telefono;
+}
+
+void sucursal::setDireccion(string direccion){
+    this->direccion=direccion;
+}
+    
 
 sucursal::~sucursal() {
 }

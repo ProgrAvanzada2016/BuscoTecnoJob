@@ -26,6 +26,10 @@ class seccion {
             seccion();
             seccion(const seccion& orig);
             seccion(string nombre,int interno);
+            string getNombre();
+            int getInterno();
+            void setNombre();
+            void setInterno();
             virtual ~seccion();
             
 };

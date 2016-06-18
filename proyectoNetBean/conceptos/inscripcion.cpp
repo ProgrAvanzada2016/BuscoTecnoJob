@@ -19,6 +19,28 @@ inscripcion::inscripcion() {
 inscripcion::inscripcion(const inscripcion& orig) {
 }
 
+inscripcion::inscripcion(date fecha, date **entrevistas){
+    this->fecha=fecha;
+    this->entrevistas=entrevistas;
+}
+
+
+inscripcion::date getFecha(){
+    return this->fecha;
+}
+
+
+inscripcion::date** getEntrevistas(){
+    return this->entrevistas;
+}
+ void setFecha(date fecha){
+     this->fecha=fecha;
+ }
+ 
+void setEntrevistas(date **entrevistas){
+    this->entrevistas=entrevistas;
+}
+
 inscripcion::~inscripcion() {
 }
 

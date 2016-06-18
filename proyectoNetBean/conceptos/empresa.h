@@ -27,6 +27,10 @@ public:
     empresa();
     empresa(const empresa& orig);
     empresa(string rut,string nombre);
+    string getRut();
+    string getNombre();
+    void setRut();
+    void setNombre();  
     virtual ~empresa();
 
 };

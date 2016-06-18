@@ -17,9 +17,29 @@ empresa::empresa() {
 }
 
 empresa::empresa(const empresa& orig) {
+    this->rut = orig.rut;
+    this->nombre = orig.nombre;
 }
 
-empresa::empresa(string rut,string nombre){
+empresa::empresa(string rut, string nombre) {
+    this->rut = rut;
+    this->nombre = nombre;
+}
+
+string empresa::getRut() {
+    return this->rut;
+}
+
+string empresa::getNombre() {
+    return this->nombre;
+}
+
+void empresa::setRut(string rut) {
+    this->rut = rut;
+}
+
+void empresa::getNombre(string nombre) {
+    this->nombre = nombre;
 }
 
 empresa::~empresa() {
