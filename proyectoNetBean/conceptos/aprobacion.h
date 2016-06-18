@@ -34,8 +34,8 @@ public:
     int getNota();
     
     //setters
-    void setFechaApro();
-    void setNota();
+    void setFechaApro(date fechaApro);
+    void setNota(int nota);
     
     virtual ~aprobacion();
 private:

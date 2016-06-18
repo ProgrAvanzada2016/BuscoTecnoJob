@@ -13,6 +13,8 @@
 
 #include "ControladorOferta.h"
 #include "../manejadores/ManejadorOferta.h"
+#include "../conceptos/oferta.h"
+#include "../datatypes/dtOferta.h"
 
 using namespace std;
 
@@ -28,12 +30,28 @@ oferta* ControladorOferta::getOferta(double nroExp) {
     return ManejadorOferta::getInstancia()->getOferta(nroExp);
 }
 
-void ControladorOferta::insertarOferta(DtOferta dte) {
+void ControladorOferta::insertarOferta(dtOferta dte) {
     oferta* o = new oferta();
- //   o->Setci(dte.GetCi());
+    o->SetNroExp(dte.GetCi());
   //  o->Setnombre(dte.GetNombre());
    // o->Setapellido(dte.GetApellido());
-            
+   string GetNroExp();
+                   void SetNroExp(string val);
+                   string GetTitulo();
+                   void SetTitulo(string val);
+                   string GetDescripcion();
+                   void SetDescripcion(string val);
+                   dtRango GetRangoSalarial();
+                   dtRango SetRangoSalarial(DtRango val);
+                   int GetHoras();
+                   void SetHoras(int val);
+                   dtDate GetFechaInicio();
+                   void SetFechaInicio(int val);
+                   dtDate GetFechaFin();
+                   void SetFechaFin(int val);
+                   int GetCantPuestos();
+                   void SetCantPuestos(int val);
+    
     ManejadorOferta::getInstancia()->insertarOferta(o);
 }
 
@@ -42,6 +60,6 @@ list<DtOferta*>* ControladorOferta::listarOferta() {
 }
 
 
-DtOferta* ControladorOferta::getDtOferta(double nroExp){
+dtOferta* ControladorOferta::getDtOferta(double nroExp){
     return ManejadorOferta::getInstancia()->getOferta(nroExp)->getDataType();
 }
