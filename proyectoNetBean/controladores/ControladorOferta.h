@@ -30,6 +30,16 @@ public:
     virtual oferta* getOferta(double nroExp);
     
        
+    //FUNCIONES PARA ALTA DE ENTREVISTA(ale)
+    listaOfertasActivas (): Set (DtOferta){
+    }
+    
+    obtenerListaEstOf(Nro_exp:string):Set(DtEstudiante){
+    }
+    
+    altaEntrevista(ci,fecha){
+    }
+    
 private:
       
 

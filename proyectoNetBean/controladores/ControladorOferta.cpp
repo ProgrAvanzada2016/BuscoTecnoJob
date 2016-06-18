@@ -54,3 +54,14 @@ dtOferta* ControladorOferta::getDtOferta(double nroExp){
 oferta* ControladorOferta::getOferta(double nroExp) {
     return ManejadorOferta::getInstancia()->getOferta(nroExp);
 }
+
+
+ //FUNCIONES PARA ALTA DE ENTREVISTA(ale)
+    listaOfertasActivas (): Set (DtOferta){
+    }
+    
+    obtenerListaEstOf(Nro_exp:string):Set(DtEstudiante){
+    }
+    
+    altaEntrevista(ci,fecha){
+    }
