@@ -15,6 +15,7 @@
 #define PERSONA_H
 
 #include <string>
+#include "date.h"
 using namespace std;
 
 class Persona {
@@ -22,16 +23,18 @@ class Persona {
         string ci;
         string nombre;
         string apellido;
+        date fechaNac;
 
 public:
-    Persona();
+    Persona(string ci, string nom, string ape, date fec);
     Persona(const Persona& orig);
-        string Getci() { return ci; }
-        void Setci(string val) { ci = val; }
-        string Getnombre() { return nombre; }
-        void Setnombre(string val) { nombre = val; }
-        string Getapellido() { return apellido; }
-        void Setapellido(string val) { this->apellido = val; }
+        string getCi();
+        void setCi(string ci);
+        string getNombre();
+        void setNombre(string nom);
+        string getApellido();
+        void setApellido(string ape);
+        void getfecha();
         
     
 
