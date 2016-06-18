@@ -18,7 +18,7 @@
 #include "date.h"
 using namespace std;
 
-class Persona {
+class persona {
     private:
         string ci;
         string nombre;
@@ -26,8 +26,8 @@ class Persona {
         date fechaNac;
 
 public:
-    Persona(string ci, string nom, string ape, date fec);
-    Persona(const Persona& orig);
+    persona(string ci, string nom, string ape, date fec);
+    persona(const Persona& orig);
         string getCi();
         void setCi(string ci);
         string getNombre();
