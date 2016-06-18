@@ -17,10 +17,12 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
-#include "../datatypes/dtDate.h"
+#include <list>
+#include "../datatypes/date.h"
 #include "../datatypes/dtRango.h"
-using namespace std;
+#include "Estudiante.h"
 
+using namespace std;
 
 class oferta {
             private:
@@ -29,17 +31,53 @@ class oferta {
                 string descripcion;
                 dtRango rangoSalarial;
                 int horas;
-                dtDate fechaInicio;
-                dtDate fechaFin;
+                date fechaInicio;
+                date fechaFin;
                 int cantPuestos;
+                list<Estudiante*> estudianteOf;  
                 
                 
             public:
+                   //Constructores
                    oferta();
                    oferta(const oferta& orig);
-                   oferta(double nroExp, string titulo, string descripcion,dtRango rangoSalarial,int horas,dtDate fechaInicio,dtDate fechaFin,int cantPuestos);
+                   oferta(string nroExp, string titulo, string descripcion,dtRango rangoSalarial,int horas,dtDate fechaInicio,dtDate fechaFin,int cantPuestos);
                    virtual ~oferta();
-};
+                   
+                   //Geters y Seters
+                   string GetNroExp();
+                   void SetNroExp(string val);
+                   string GetTitulo();
+                   void SetTitulo(string val);
+                   string GetDescripcion();
+                   void SetDescripcion(string val);
+                   dtRango GetRangoSalarial();
+                   dtRango SetRangoSalarial(DtRango val);
+                   int GetHoras();
+                   void SetHoras(int val);
+                   dtDate GetFechaInicio();
+                   void SetFechaInicio(int val);
+                   dtDate GetFechaFin();
+                   void SetFechaFin(int val);
+                   int GetCantPuestos();
+                   void SetCantPuestos(int val);
+                   
+                   //Operaciones 
+                   bool ofertaActiva();
+                   
+                   void addListaEstOf(Estudiante* est);
+                   
+                   list<Estudiante*> GetListaEstOf();
+                   
+                   dtOferta crearDtOferta();
+                   
+                   void Modificar(string titulo, string descripcion,dtRango rangoSalarial,int horas,dtDate fechaInicio,dtDate fechaFin,int cantPuestos);//Agregada por Gastón
+                   
+                   void InscribeEstudianteOferta(Estudiante e);
+                   
+                   void AltaEntrevista(string ci,date fecha);
+                   
+
 
 #endif /* OFERTA_H */
 
