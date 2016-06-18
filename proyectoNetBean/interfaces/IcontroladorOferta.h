@@ -28,12 +28,21 @@ using namespace std;
 class IcontroladorOferta {
 public:
    
-//    virtual void insertarEstudiante(DtEstudiante) = 0;
-//    virtual list<DtEstudiante*> listarEstudiantes() = 0;
-//    virtual DtEstudiante* getDataEstudiante(string) = 0;
+   virtual void insertarOferta(DtOferta) = 0;
+   virtual list<DtOferta*> listarOferta() = 0;
+   virtual DtOferta* getDtOferta(string) = 0; 
+   virtual Oferta* getOferta(string) = 0;
     
    
-//    virtual Estudiante* getEstudiante(string) = 0;
+    //FUNCIONES PARA ALTA DE ENTREVISTA(ale)
+    listaOfertasActivas (): Set (DtOferta){
+    }
+    
+    obtenerListaEstOf(Nro_exp:string):Set(DtEstudiante){
+    }
+    
+    altaEntrevista(ci,fecha){
+    }
     
 private:
 

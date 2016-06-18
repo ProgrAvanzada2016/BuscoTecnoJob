@@ -12,13 +12,36 @@
  */
 
 #include "ControladorOferta.h"
+#include "../manejadores/ManejadorOferta.h"
+
+using namespace std;
+
 
 ControladorOferta::ControladorOferta() {
-}
-
-ControladorOferta::ControladorOferta(const ControladorOferta& orig) {
 }
 
 ControladorOferta::~ControladorOferta() {
 }
 
+
+oferta* ControladorOferta::getOferta(double nroExp) {
+    return ManejadorOferta::getInstancia()->getOferta(nroExp);
+}
+
+void ControladorOferta::insertarOferta(DtOferta dte) {
+    oferta* o = new oferta();
+ //   o->Setci(dte.GetCi());
+  //  o->Setnombre(dte.GetNombre());
+   // o->Setapellido(dte.GetApellido());
+            
+    ManejadorOferta::getInstancia()->insertarOferta(o);
+}
+
+list<DtOferta*>* ControladorOferta::listarOferta() {
+    return ManejadorOferta::getInstancia()->listarOfertas();
+}
+
+
+DtOferta* ControladorOferta::getDtOferta(double nroExp){
+    return ManejadorOferta::getInstancia()->getOferta(nroExp)->getDataType();
+}

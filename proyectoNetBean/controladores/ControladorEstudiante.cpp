@@ -12,7 +12,7 @@
  */
 
 #include "ControladorEstudiante.h"
-#include "../manejadores/ManejadorEstudiantes.h"
+#include "../manejadores/ManejadorEstudiante.h"
 using namespace std;
 
 

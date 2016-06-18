@@ -23,6 +23,6 @@ ManejadorOferta* ManejadorOferta::getInstancia() {
     return instancia;
 }
 
-//oferta* ManejadorOferta::getOferta(string ci) {
-  //  return oferta.find(ci)->second;
-//}
+oferta* ManejadorOferta::getOferta(string ci) {
+   return oferta.find(ci)->second;
+}

@@ -31,7 +31,7 @@ Estudiante* ManejadorEstudiante::getEstudiante(string ci) {
     return estudiantes.find(ci)->second;
 }
 
-/*void ManejadorEstudiantes::insertarEstudiante(Estudiante* e) {
+void ManejadorEstudiantes::insertarEstudiante(Estudiante* e) {
       estudiantes.insert ( std::pair<string,Estudiante*>(e->Getci(),e) );
 }
 
