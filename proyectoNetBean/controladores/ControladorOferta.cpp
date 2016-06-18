@@ -26,32 +26,19 @@ ControladorOferta::~ControladorOferta() {
 }
 
 
-oferta* ControladorOferta::getOferta(double nroExp) {
-    return ManejadorOferta::getInstancia()->getOferta(nroExp);
-}
-
 void ControladorOferta::insertarOferta(dtOferta dte) {
     oferta* o = new oferta();
-    o->SetNroExp(dte.GetCi());
-  //  o->Setnombre(dte.GetNombre());
-   // o->Setapellido(dte.GetApellido());
-   string GetNroExp();
-                   void SetNroExp(string val);
-                   string GetTitulo();
-                   void SetTitulo(string val);
-                   string GetDescripcion();
-                   void SetDescripcion(string val);
-                   dtRango GetRangoSalarial();
-                   dtRango SetRangoSalarial(DtRango val);
-                   int GetHoras();
-                   void SetHoras(int val);
-                   dtDate GetFechaInicio();
-                   void SetFechaInicio(int val);
-                   dtDate GetFechaFin();
-                   void SetFechaFin(int val);
-                   int GetCantPuestos();
-                   void SetCantPuestos(int val);
-    
+    o->SetNroExp(dte.getNroExp());
+    o->SetTitulo(dte.getTitulo()); 
+    o->SetDescripcion(dte.getDescripcion());
+    o->SetRangoSalarial(dte.getRangoSalarial());               
+    o->SetHoras(dte.getHoras());              
+    o->SetFechaInicio(dte.getFechaInicio());             
+    o->SetFechaFin(dte.GetFechaFin());               
+    o->SetCantPuestos(dte.GetCantPuestos());      
+}           
+                 
+                      
     ManejadorOferta::getInstancia()->insertarOferta(o);
 }
 
@@ -62,4 +49,8 @@ list<DtOferta*>* ControladorOferta::listarOferta() {
 
 dtOferta* ControladorOferta::getDtOferta(double nroExp){
     return ManejadorOferta::getInstancia()->getOferta(nroExp)->getDataType();
+}
+
+oferta* ControladorOferta::getOferta(double nroExp) {
+    return ManejadorOferta::getInstancia()->getOferta(nroExp);
 }

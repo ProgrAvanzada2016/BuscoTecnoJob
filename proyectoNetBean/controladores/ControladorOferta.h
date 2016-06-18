@@ -16,12 +16,22 @@
 using namespace std;
 #include "../interfaces/IcontroladorOferta.h"
 
+
 class ControladorOferta: public IcontroladorOferta {
 public:
     ControladorOferta();
    
     virtual ~ControladorOferta();
+    
+    
+    virtual void insertarOferta(dtOferta dte);
+    virtual list<dtOferta*>* listarOfertas();
+    virtual dtOferta* getDtOfertta(double nroExp);
+    virtual oferta* getOferta(double nroExp);
+    
+       
 private:
+      
 
 };
 

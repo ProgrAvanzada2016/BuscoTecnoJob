@@ -29,7 +29,7 @@ class IcontroladorOferta {
 public:
    
    virtual void insertarOferta(DtOferta) = 0;
-   virtual list<DtOferta*> listarOferta() = 0;
+   virtual list<DtOferta*>* listarOferta() = 0;
    virtual DtOferta* getDtOferta(string) = 0; 
    virtual Oferta* getOferta(string) = 0;
     

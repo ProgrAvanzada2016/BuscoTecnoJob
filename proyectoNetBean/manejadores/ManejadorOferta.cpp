@@ -14,6 +14,7 @@
 #include "../proyectoNetBean/ManejadorOferta.h"
 #include "../proyectoNetBean/conceptos/oferta.h"
 
+
 ManejadorOferta* ManejadorOferta::instancia = NULL;  
 
 ManejadorOferta* ManejadorOferta::getInstancia() {
