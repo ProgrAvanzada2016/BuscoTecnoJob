@@ -138,11 +138,10 @@ void oferta::SetCantPuestos(int val){
 
 
 bool oferta::ofertaActiva(){
-    
-    
+
 }
 
-dtOferta oferta::crearDtOferta(){
+list <DtEstudiante> GetListaEstOf(){
 
 
 }

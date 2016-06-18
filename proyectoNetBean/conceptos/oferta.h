@@ -20,7 +20,7 @@
 #include <list>
 #include "../datatypes/date.h"
 #include "../datatypes/dtRango.h"
-#include "Estudiante.h"
+#include "../datatypes/DtEstudiante.h"
 
 using namespace std;
 
@@ -34,9 +34,8 @@ class oferta {
                 date fechaInicio;
                 date fechaFin;
                 int cantPuestos;
-                list<Estudiante*> estudianteOf;  
-                
-                
+    
+                        
             public:
                    //Constructores
                    oferta();
@@ -64,10 +63,8 @@ class oferta {
                    
                    //Operaciones 
                    bool ofertaActiva();
-                   
-                   void addListaEstOf(Estudiante* est);
-                   
-                   list<Estudiante*> GetListaEstOf();
+                  
+                   list <DtEstudiante> GetListaEstOf();
                    
                    dtOferta crearDtOferta();
                    
